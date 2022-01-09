@@ -38,7 +38,7 @@ module.exports = {
         open: true,
         hot: true,
         watchFiles: {
-            paths: ['src', 'SASS']},
+            paths: ['src', 'SASS/main.css']},
     },
 
     // Loaders
