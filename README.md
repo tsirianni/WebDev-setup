@@ -4,11 +4,17 @@
 
 `npm i -D webpack webpack-cli` install dependencies for webpack
 
-Create src/index.js
+`npm i -D html-webpack-plugin` install html plugin
+
+Create **src** with:
+* app.js,
+* temp.html (template for plugin)
+
 
 Create **webpack.config.js** with:
 ```
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development', // or Production
@@ -20,6 +26,16 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[contenthash].js',
         clean: true,
-    }
+    },
+
+    // Loaders
+
+    // Plugins
+    plugins: [new HtmlWebpackPlugin({
+        title: 'Project Name',
+        filename: 'index.html',
+        template: path.resolve(__dirname, 'src/temp.html'),
+    })],
+}
 ```
 
