@@ -32,7 +32,19 @@ module.exports = {
         clean: true,
     },
 
+    devtool: 'inline-source-map',
+    devServer: {
+        static: path.resolve(__dirname, 'dist'),
+        open: true,
+        hot: true,
+        watchFiles: {
+            paths: ['src', 'SASS']},
+    },
+
     // Loaders
+    module: {
+        rules: [{test: /\.css$/, use: ['style-loader', 'css-loader']}]
+    },
 
     // Plugins
     plugins: [new HtmlWebpackPlugin({
