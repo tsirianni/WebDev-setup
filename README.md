@@ -6,6 +6,10 @@
 
 `npm i -D html-webpack-plugin` install html plugin
 
+`npm i -D style-loader css-loader` install css dependencies
+
+`npm i -D webpack-dev-server` install webpack server
+
 Create **src** with:
 * app.js,
 * temp.html (template for plugin)
