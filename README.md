@@ -1,14 +1,21 @@
 # WebDev-setup
+___
 
-`npm init -y` and delete main in **package.jason**
+`npm init -y` and delete ***main*** in **package.jason**
 
-`npm i -D webpack webpack-cli` install dependencies for webpack
+## Dependencies installed
 
-`npm i -D html-webpack-plugin` install html plugin
+### Webpack
+> `npm i -D webpack webpack-cli webpack-dev-server`
 
-`npm i -D style-loader css-loader` install css dependencies
+### HTML
+>`npm i -D html-webpack-plugin`
 
-`npm i -D webpack-dev-server` install webpack server
+### CSS
+>`npm i -D style-loader css-loader`
+
+This strucutre uses SASS/SCSS, and the **style file being tracked is actually the compiled .css** file. So, in this case, I am writing my code in SASS and compiling to .css to be tracked by webpack. For this reason, the ***sass-loader*** was not installed.
+___
 
 Create **src** with:
 * app.js,
@@ -29,6 +36,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[contenthash].js',
+        assetModuleFilename: '[name][ext]',
         clean: true,
     },
 
@@ -43,7 +51,10 @@ module.exports = {
 
     // Loaders
     module: {
-        rules: [{test: /\.css$/, use: ['style-loader', 'css-loader']}]
+        rules: [
+            {test: /\.css$/, use: ['style-loader', 'css-loader']},
+            {test: /\.(svg|ico|png|webp|jpg|jpeg|gif)$/, type: 'asset/resource'},
+        ]
     },
 
     // Plugins
