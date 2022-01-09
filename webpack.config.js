@@ -10,6 +10,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[contenthash].js',
+        assetModuleFilename: '[name][ext]',
         clean: true,
     },
 
@@ -24,7 +25,10 @@ module.exports = {
 
     // Loaders
     module: {
-        rules: [{test: /\.css$/, use: ['style-loader', 'css-loader']}]
+        rules: [
+            {test: /\.css$/, use: ['style-loader', 'css-loader']},
+            {test: /\.(svg|ico|png|webp|jpg|jpeg|gif)$/, type: 'asset/resource'},
+        ]
     },
 
     // Plugins
