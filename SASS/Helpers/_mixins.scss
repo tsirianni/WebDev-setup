@@ -1,0 +1,19 @@
+/* Breakpoints and media queries */
+
+$breakpoints: (
+    small-m: 320px,
+    medium-m: 375px,
+    large-m: 425px,
+    standard: 768px,
+    medium-d: 1024px,
+    large-d: 1440px,
+);
+
+@mixin mquery($from, $upto) {
+    $size-one: map-get($map: $breakpoints, $key: $from);
+    $size-two: map-get($map: $breakpoints, $key: $upto);
+
+    @media (min-width: $size-one) and (max-width: ($size-two - 1)) {
+        @content;
+    }
+};
