@@ -10,6 +10,12 @@ This repository aims to provide a basic starting pack to a web-development proje
 
 **Note:** This strucutre uses SASS/SCSS, and the **style file being tracked is actually the compiled .css** file in the *SASS* folder. So, in this case, I am writing my code in SASS and compiling to .css to be tracked by webpack. For this reason, the ***sass-loader*** was not installed. You will need a tool to compile the sass/scss files.
 
+
+### Initiate development environment
+`npm run dev`
+
+### Build application
+`npm run build`
 ___
 ### Folder Structure
-![Folder Structure](https://raw.githubusercontent.com/tsirianni/random-images/main/Folder%20Structure.svg?token=GHSAT0AAAAAABOSMCNZW5UVXCLER6NS7X7MYO3QQLQ)
+![Folder Structure](https://raw.githubusercontent.com/tsirianni/random-images/main/Folder%20Structure.svg?token=GHSAT0AAAAAABOSMCNZHQQNFOJIHSYR44JGYO3S2LQ)
