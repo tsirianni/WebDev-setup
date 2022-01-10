@@ -1,11 +1,21 @@
+@use './Helpers/colors';
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+:root {
+    @each $category, $colors in colors.$project-colors {
+        @each $color, $value in $colors {
+            --clr-#{$category}-#{$color}: #{$value};
+        }
+    }
+}
+
 body {
     background-color: white;
     color: purple;
-    font-size: 1rem;
+    font-size: 2rem;
 }
