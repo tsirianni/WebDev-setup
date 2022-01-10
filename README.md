@@ -12,4 +12,4 @@ This repository aims to provide a basic starting pack to a web-development proje
 
 ___
 ### Folder Structure
-![Folder Structure](https://raw.githubusercontent.com/tsirianni/random-images/main/Folder%20Structure.svg?token=GHSAT0AAAAAABOSMCNYB6QJGE6BZN2UQ3OCYO3QFJA)
+![Folder Structure](https://raw.githubusercontent.com/tsirianni/random-images/main/Folder%20Structure.svg?token=GHSAT0AAAAAABOSMCNZW5UVXCLER6NS7X7MYO3QQLQ)
