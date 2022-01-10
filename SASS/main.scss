@@ -21,5 +21,8 @@ body {
     color: purple;
     font-size: 5rem;
 
-    
+    @include mixins.media-querie(variables.$medium-m, variables.$large-m) {
+        color: var(--clr-#{primary}-#{color2});
+        font-size: 2rem;
+    }
 }

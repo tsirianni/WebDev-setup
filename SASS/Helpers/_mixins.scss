@@ -1,10 +1,11 @@
 /* Media queries */
 
-@mixin mquery($from, $upto) {
+@mixin media-querie($from, $upto) {
     $size-one: $from;
     $size-two: $upto;
 
     @media only screen and (min-width: $size-one) and (max-width: ($size-two - 1)) {
         @content;
-    };
+    }
+    
 };
