@@ -23,6 +23,6 @@ body {
 
     @include mixins.media-querie(variables.$medium-m, variables.$large-m) {
         color: var(--clr-#{neutral}-#{color4});
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }
