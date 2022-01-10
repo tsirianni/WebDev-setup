@@ -1,0 +1,16 @@
+/* Breakpoints and media queries */
+
+$breakpoints: (
+    mobile: (
+        small: 320px,
+        medium: 375px,
+        large: 425px,
+    ),
+    tablet: (
+        standard: 768px,
+    ),
+    desktop: (
+        medium-d: 1024px,
+        large-d: 1440px,
+    )
+);
