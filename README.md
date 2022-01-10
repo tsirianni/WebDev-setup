@@ -1,5 +1,4 @@
 # WebDev-setup
-___
 
 `npm init -y` and delete ***main*** in **package.jason**
 
@@ -7,6 +6,9 @@ ___
 
 ### Webpack
 > `npm i -D webpack webpack-cli webpack-dev-server`
+
+### Babel
+> `npm i -D babel-loader @babel/core @babel/preset-env`
 
 ### HTML
 >`npm i -D html-webpack-plugin`
