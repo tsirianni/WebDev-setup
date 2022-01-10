@@ -26,8 +26,17 @@ module.exports = {
     // Loaders
     module: {
         rules: [
+            // CSS
             {test: /\.css$/, use: ['style-loader', 'css-loader']},
+            // Images
             {test: /\.(svg|ico|png|webp|jpg|jpeg|gif)$/, type: 'asset/resource'},
+            // Js Transpiler (Babel)
+            {test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+                loader: 'babel-loader',
+                options: {presets: ['@babel/preset-env']}
+            },},
         ]
     },
 
