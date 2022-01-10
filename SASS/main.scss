@@ -18,11 +18,11 @@
 
 body {
     background-color: white;
-    color: purple;
+    color: black;
     font-size: 5rem;
 
     @include mixins.media-querie(variables.$medium-m, variables.$large-m) {
-        color: var(--clr-#{primary}-#{color2});
+        color: var(--clr-#{neutral}-#{color4});
         font-size: 2rem;
     }
 }
