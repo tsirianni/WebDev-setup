@@ -27,7 +27,7 @@ module.exports = {
     module: {
         rules: [
             // CSS
-            {test: /\.css$/, use: ['style-loader', 'css-loader']},
+            {test: /\.s[ac]ss$/i, use: ['style-loader', 'css-loader', 'sass-loader']},
             // Images
             {test: /\.(svg|ico|png|webp|jpg|jpeg|gif)$/, type: 'asset/resource'},
             // Js Transpiler (Babel)

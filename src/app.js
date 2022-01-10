@@ -1,3 +1,3 @@
-import style from "../SASS/main.css";
+import style from "../SASS/main.scss";
 
 console.log('Hi there!');
